@@ -34,10 +34,14 @@ async function getAvocados () {
 
         helperList.push(articuleContainer);
 
-    })
+    });
 
     avocadosSection.append(...helperList);
 
-}
+};
+
+
+
+
 
 getAvocados();
