@@ -1,0 +1,181 @@
+:root {
+    --color1: #DCFF8A;
+    --color2: #C0F96A;
+    --color3: #A5F34A;
+    --color4: #89ED29;
+    --color5: #6DE709;
+
+    --sm: 12px;
+    --md: 16px;
+    --lg: 24px;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.avo-logo,
+.carrito {
+    width: 36px;
+    cursor: pointer;
+}
+
+.navbar-email {
+    cursor: pointer;
+}
+
+.-nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--color5);
+}
+
+.navbar-left-container ul,
+.navbar-right-container ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 24px;
+    margin: 0;
+}
+
+.navbar-left-container:hover,
+.navbar-right-container:hover {
+    background-color: var(--color1);
+}
+
+.navbar-left-container ul li a {
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+.navbar-right-container ul li {
+    margin-left: 24px;
+}
+
+.cart-items {
+    margin: 0;
+}
+
+.Intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.intro {
+    margin-top: 0px;
+}
+
+.avo-container-img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border: 1px solid var(--color1);
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.avocados-container {
+    margin-top: 36px;
+    margin-bottom: 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 36px;
+    justify-items: center;
+}
+
+.avo-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    cursor: pointer;
+}
+
+.avo-container-section {
+    height: 100px;
+    width: 250px;
+    background-color: #DCFF8A;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    text-align: center;
+}
+
+.avo-container-section-h3 {
+    margin-top: 8px;
+}
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    border-top: 1px solid var(--color5);
+}
+
+.footer p {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.brand-logo {
+    height: 36px;
+    margin-right: 16px;
+}
+
+.autors-right {
+    height: 10px;
+    margin-right: 16px;
+}
+
+.footers-items img {
+    height: 24px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.companny {
+    align-items: center;
+}
+
+.mobile-avo-logo,
+.mobile-carrito {
+    display: none;
+    height: 36px;
+}
+
+@media (max-width:850px) {
+    .-nav {
+        display: none;
+    }
+    .-header {
+        display: flex;
+        justify-content: space-around;
+        height: 36px;
+        margin: 36px;
+    }
+    .mobile-avo-logo,
+    .mobile-carrito {
+        display: block;
+    }
+    .avocados-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
